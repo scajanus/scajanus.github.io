@@ -24,9 +24,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
-kramdown:
-  syntax_highlighter: rouge
+highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
