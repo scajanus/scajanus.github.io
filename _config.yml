@@ -22,10 +22,6 @@ url: "http://sakaricajanus.com" # the base hostname & protocol for your site, e.
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
