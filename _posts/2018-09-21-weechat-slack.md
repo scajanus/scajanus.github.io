@@ -7,10 +7,12 @@ On Monday, against my better judgement, I still somehow end up installing the We
 The next thing I know, I'm fixing this: https://github.com/wee-slack/wee-slack/issues/533
 and implementing mouse handling for clickable threads, getting knee-deep into triggers: 
 
-> thread_test: hsignal(chat_thread_open)
->              =? "${_chat_line_message} =~ Thread: (\S+) Replies"
->              ~1 ".*Thread: (\S+) Replies.*" --> "${re:1}" (_chat_line_message)
->              /1 "/command -buffer ${buffer[${tg_signal_data}].full_name} * thread ${_chat_line_message}".
+```
+thread_test: hsignal(chat_thread_open)
+             =? "${_chat_line_message} =~ Thread: (\S+) Replies"
+             ~1 ".*Thread: (\S+) Replies.*" --> "${re:1}" (_chat_line_message)
+             /1 "/command -buffer ${buffer[${tg_signal_data}].full_name} * thread ${_chat_line_message}".
+```
 
 Friends don't let friends do computers.
 
